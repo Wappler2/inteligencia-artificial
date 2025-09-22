@@ -6,67 +6,67 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-       enunciado: "Vocễ gosta de praticar esportes?",
+        enunciado: "você gosta de praticar esportes?",
         alternativas: [
             {
-                texto: "Sim, com certeza!",
-                afirmacao: "Então você deve ser uma pessoa ativa esportivamente. "
+                texto: "Sim, com certeza.",
+                afirmacao: "Então você deve ser uma pessoas ativa esportivamente, "
             },
             {
-                texto: "Não, prefiro outros esportes.",
-                afirmacao: "Então você deve gostar de ler, assistir?."
+                texto: "Não pefiro outras coisas.",
+                afirmacao: "Então você deve gostar de ler e assistir,"
             }
         ]
     },
     {
-        enunciado: "quais das atividades a seguir você prefere?",
+        enunciado: "Quais das atividades a seguir você prefere?",
         alternativas: [
             {
-                texto: "corre, pedalar, nadar, futebol, basquete, volêi.",
-                afirmacao: "então você pratica esportes."
+                texto: "Correr, pedalar, nadar, futebol, basquete, vôlei.",
+                afirmacao: "Você pratica esportes,"
             },
             {
-                texto: "assistir,dormir, ler, mecher no celular, trabalhar, estudar.",
-                afirmacao: "você não gosta de praticar esportes."
+                texto: "Assistir, dormir, mexer no celular, malhar, estudar.",
+                afirmacao: "Você não gosta de praticar esportes,"
             }
         ]
     },
     {
-        enunciado: "você tem uma rotina exaustiva apartir de suas atividades?",
+        enunciado: "Você tem uma rotina exaustiva a partir de suas atividades?",
         alternativas: [
             {
-                texto: "sim, canso demais.",
-                afirmacao: "você é uma pessoa que descansa pouco."
+                texto: " Sim, canso de mais",
+                afirmacao: "Você é uma pessoa que descansa pouco,"
             },
             {
-                texto: "não, suporto bem de boa.",
-                afirmacao: "então você é uma pessoa que dorme bem."
+                texto: " Não, eu suporto bem de boa.",
+                afirmacao: "Você é uma pessoa que dorme bem,"
             }
         ]
     },
     {
-        enunciado: "você acha que sua rotina está fazendo bem para sua saude?",
+        enunciado: "Voce acha que rotina ta fazendo bem a sua saúde?",
         alternativas: [
             {
-                texto: " sim, melhora muito minha saude.",
-                afirmacao: "sua rotina esta sendo conciliada com suas atividades."
+                texto: "Sim, melhorou muito minha saúde.",
+                afirmacao: "Sua rotina está toda conciliada com suas atividades,"
             },
             {
-                texto: "não, esta cada ves mais exausto.",
-                afirmacao: "você deve rever um pouco mas sua rotina!"
+                texto: "Não, estou cada vez mais exausto",
+                afirmacao: "Você deve rever sua rotina."
             }
         ]
     },
     {
-        enunciado: "você está indo bem a escola mesmo com sua rotina cansativa? ",
+        enunciado: "Você está indo bem na escola mesmo com suas rotinas cansativas?",
         alternativas: [
             {
-                texto: "sim, estou indo muito bem.",
-                afirmacao: "muito bem, você é uma pessoa que consegue se dedica em tudo mesmo tendo essa rotina cansativa."
+                texto: "Sim, estou indo muito bem.",
+                afirmacao: "Muito bem ,você é uma pessoa que consegue se dedicar a essa rotina cansativa."
             },
             {
-                texto: "não, estou indo mal.",
-                afirmacao: "você terá que rever suas tarefas, e deixar um tempo maior para estudar. "
+                texto: "Não, estou indo mal.",
+                afirmacao: "Você terá que rever suas tarefas e deixar um tempo maior para tarefas."
             }
         ]
     },
@@ -86,7 +86,7 @@ function mostraPergunta() {
     caixaPerguntas.textContent = perguntaAtual.enunciado;
     caixaAlternativas.textContent = "";
     mostraAlternativas();
-      }
+}
 
 function mostraAlternativas(){
     for(const alternativa of perguntaAtual.alternativas) {
@@ -105,7 +105,7 @@ function respostaSelecionada(opcaoSelecionada) {
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = "Em 2049...";
+    caixaPerguntas.textContent = "Seu diagnóstico é:";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }

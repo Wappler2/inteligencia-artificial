@@ -1,10 +1,12 @@
 :root{
-    --cor-fundo: #01080E ;
-    --cor-principal: #0B0D20 ;
-    --cor-secundaria: #212333; 
-    --cor-destaque: #2BDEFD;
-    --cor-texto: #D7F9FF;
+    --cor-fundo: #000000 ;
+    --cor-principal: #1b1a1a ;
+    --cor-secundaria: #36363d; 
+    --cor-destaque: #e01515;
+    --cor-texto: #ffffff;
+
 }
+
 body {
     background-color: var(--cor-fundo);
     color: var(--cor-texto);
@@ -13,7 +15,8 @@ body {
     align-items: center;
     min-height: 100vh;
 }
- .caixa-principal{
+
+.caixa-principal{
     background-color: var(--cor-principal);
     width: 90%;
     max-width: 600px;
@@ -32,7 +35,7 @@ button {
     border-radius: 15px;
     padding: 15px;
     transition: background-color 0.3s;
- }
+}
 
 button:hover{
     background-color: var(--cor-destaque);
